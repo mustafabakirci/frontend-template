@@ -1,0 +1,42 @@
+@mixin dark-mode
+{
+    @media (prefers-color-scheme: dark) { @content; }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition($efekt: $ease, $sure: .25s) {
+    transition: all $efekt $sure; 
+}
+
+@mixin mobileCssSlider() {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    scroll-padding: 30px;
+    &::-webkit-scrollbar {
+      display: none; 
+    }  
+    >* {
+        scroll-snap-align: center;
+        flex-shrink: 0;
+        order: 1;
+    }
+    &::after {
+      content: "";
+      flex-shrink: 0;
+      width: 1px;
+      min-height: 1px;
+      display: block;
+      order: 4;
+    }
+}

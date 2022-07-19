@@ -1,0 +1,12 @@
+@import "config/functions";
+@import "config/mixins";
+@import "config/variables";
+@import "config/media";
+
+@import "skeleton/reset";
+@import "skeleton/theme";
+@import "skeleton/header";
+@import "skeleton/menu";
+@import "skeleton/footer";
+
+@import "pages/home";

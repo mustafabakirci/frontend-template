@@ -1,0 +1,49 @@
+html { 
+    scroll-behavior: smooth;
+}
+body {
+    line-height: 1;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    background: $white;
+    font-size: 16px;
+}
+
+img, i {vertical-align: middle;}
+
+img {
+    max-width: 100%;
+}
+
+*{outline:0 !important;}
+*, ::after, ::before { 
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.w-100 {width: 100% !important;}  
+.w-75 {width: 75% !important;}  
+.w-60 {width: 60% !important;}  
+.w-50 {width: 50% !important;}  
+.w-40 {width: 40% !important;}  
+.w-25 {width: 25% !important;} 
+.mw-100 {max-width: 100%;}
+
+.text-center{text-align:center;} 
+.text-left {text-align: left;} 
+.text-right{text-align: right;}
+.hide {display: none;}
+.show {display: block;}
+b {font-weight: 600;}
+strong {font-weight: 800;}
+
+section { position: relative; }
+
